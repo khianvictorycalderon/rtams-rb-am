@@ -17,7 +17,7 @@
 ---
 
 ## Setup:
-1. Clone this project by running `git clone https://github.com/khianvictorycalderon/react-asp-net-rb-am.git`
+1. Clone this project by running `git clone https://github.com/khianvictorycalderon/rtams-rb-am.git`
 2. Create a separate terminal for both frontend and backend folder:
     - *Terminal 1*: `cd backend`
     - *Terminal 2*: `cd frontend`
