@@ -30,8 +30,14 @@
     ```
     *NOTE: Latest version is unstable with the current setup so I use 8.0.0*
 3. Run the following CMD comamnds:
+    
+    *NOTE: Only run this if you don't see a folder named `Migrations`*
     ```
     dotnet ef migrations add InitialCreate
+    ```
+    
+    *To actually create tables in the databases, run this*
+    ```
     dotnet ef database update
     ```
 4. Run `dotnet clean` to clean unnecessary things.
@@ -56,6 +62,7 @@ This section is provided for reference only, to give you insight into how the pr
 
 ## Backend Dependencies:
 *(Note: Some dependencies are intentionally using old versions for stable releases)*
+- `dotnet add package BCrypt.Net-Next --version 4.0.3`
 - `dotnet add package Microsoft.EntityFrameworkCore --version 8.0.0`
 - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.0`
 - `dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.0`
