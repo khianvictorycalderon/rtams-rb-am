@@ -106,7 +106,7 @@ export const SIDEBAR_BUTTONS: SidebarButton[] = [
     }
 ];
 
-export const TOPNAV_HEADER = "RTEP Full-Stack System Template";
+export const TOPNAV_HEADER = "RTAMS Full-Stack System Template";
 
 // ---------------------------------------------------
 // Navbar Buttons
