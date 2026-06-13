@@ -23,25 +23,23 @@
     - *Terminal 2*: `cd frontend`
 
 ### Inside `backend` folder:
-1. Update the `appsettings.Development.json` depending on your frontend origin *(The `"Cors": { "AllowedOrigins": [] }` part)*.
-2. Run this if you haven't installed entity framework before:
+1. Create an `.env` file that contains:
+  ```env
+  ConnectionStrings__DefaultConnection=Data Source=Your-Source\\SQLEXPRESS;Initial Catalog=rtams_rb_am_db;Integrated Security=True;TrustServerCertificate=True;
+  Cors__AllowedOrigins__0=http://localhost:3000
+  Session__DurationHours=6
+  ```
+  *Note: Change the env credentials depending on your SQL Server database configuration*
+2. Run this if you haven't installed entity framework yet:
     ```cmd
     dotnet tool install --global dotnet-ef --version 8.0.0
     ```
     *NOTE: Latest version is unstable with the current setup so I use 8.0.0*
-3. Run the following CMD comamnds:
-    
-    *NOTE: Only run this if you don't see a folder named `Migrations`*
-    ```
-    dotnet ef migrations add InitialCreate
-    ```
-    
-    *To actually create tables in the databases, run this*
+3. Run the following command for database migration:
     ```
     dotnet ef database update
     ```
-4. Run `dotnet clean` to clean unnecessary things.
-5. Run `dotnet watch run` to run your backend.
+4. Run `dotnet watch run` to run your backend.
 
 ### Inside `frontend` folder:
 1.  Create an `.env` file that contains:
