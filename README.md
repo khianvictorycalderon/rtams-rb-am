@@ -24,12 +24,12 @@
 
 ### Inside `backend` folder:
 1. Create an `.env` file that contains:
-  ```env
-  ConnectionStrings__DefaultConnection=Data Source=Your-Source\\SQLEXPRESS;Initial Catalog=rtams_rb_am_db;Integrated Security=True;TrustServerCertificate=True;
-  Cors__AllowedOrigins__0=http://localhost:3000
-  Session__DurationHours=6
-  ```
-  *Note: Change the env credentials depending on your SQL Server database configuration*
+    ```env
+    ConnectionStrings__DefaultConnection=Data Source=Your-Source\\SQLEXPRESS;Initial Catalog=rtams_rb_am_db;Integrated Security=True;TrustServerCertificate=True;
+    Cors__AllowedOrigins__0=http://localhost:3000
+    Session__DurationHours=6
+    ```
+    *Note: Change the env credentials depending on your SQL Server database configuration*
 2. Run this if you haven't installed entity framework yet:
     ```cmd
     dotnet tool install --global dotnet-ef --version 8.0.0
