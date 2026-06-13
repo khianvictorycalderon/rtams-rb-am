@@ -95,4 +95,4 @@ yarn-error.log*
 dist/
 
 *.vbs
-*.env
+.env*
